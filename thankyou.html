@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARK Drops - شكراً لك!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&family=Noto+Kufi+Arabic:wght@400;500;700;800&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Noto Kufi Arabic', Cairo, sans-serif;
+      background: linear-gradient(135deg, #fdfbf7 0%, #f4f1ea 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: #ffffff;
+      max-width: 480px;
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      padding: 40px 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .icon {
+      width: 80px;
+      height: 80px;
+      background: #d1fae5;
+      color: #1f7a46;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      margin: 0 auto 20px;
+      box-shadow: 0 4px 15px rgba(31, 122, 70, 0.2);
+      animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+    @keyframes popIn {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    h1 {
+      color: #1a1a1a;
+      font-size: 26px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      letter-spacing: -0.5px;
+    }
+    p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0 0 30px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1f7a46, #2d6a4f);
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 30px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 700;
+      box-shadow: 0 4px 15px rgba(31, 122, 70, 0.3);
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(31, 122, 70, 0.4);
+    }
+    .btn:active {
+      transform: translateY(0);
+    }
+  </style>
+
+  <!-- TikTok Pixel Code -->
+  <script>
+    !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{};ttq._i[e]=[];ttq._i[e]._u=i;ttq._t=ttq._t||{};ttq._t[e]=+new Date;ttq._o=ttq._o||{};ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript";o.async=!0;o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+    ttq.load('D2KM92JC77U9PLHEPTMG');
+    ttq.page();
+  }(window,document,'ttq');
+  </script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1585444908990176');
+    fbq('track', 'PageView');
+  </script>
+
+  <!-- Snapchat Pixel Code -->
+  <script type='text/javascript'>
+    (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+    {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+    a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+    r.src=n;var u=t.getElementsByTagName(s)[0];
+    u.parentNode.insertBefore(r,u);})(window,document,
+    'https://sc-static.net/scevent.min.js');
+    snaptr('init', 'c9e42e03-d6c6-47eb-ba05-77983ea1c2be');
+    snaptr('track', 'PAGE_VIEW');
+  </script>
+
+  <script>
+    // Fire Purchase Events based on URL parameters
+    window.onload = function() {
+      var params = new URLSearchParams(window.location.search);
+      var orderValue = params.get('value') || 299;
+      var pkgName = params.get('pkg') || 'ARK Drops';
+      var qty = params.get('qty') || 1;
+      
+      var valNum = parseFloat(orderValue);
+      var qtyNum = parseInt(qty);
+
+      // TikTok Purchase Event
+      if(typeof ttq !== 'undefined') {
+        ttq.track('Purchase', {
+          content_name: pkgName,
+          quantity: qtyNum,
+          value: valNum,
+          currency: 'SAR'
+        });
+      }
+
+      // Meta Purchase Event
+      if(typeof fbq !== 'undefined') {
+        fbq('track', 'Purchase', {
+          value: valNum,
+          currency: 'SAR',
+          content_name: pkgName,
+          content_type: 'product',
+          num_items: qtyNum
+        });
+      }
+
+      // Snapchat Purchase Event
+      if(typeof snaptr !== 'undefined') {
+        snaptr('track', 'PURCHASE', {
+          price: valNum,
+          currency: 'SAR',
+          item_category: 'ARK Drops'
+        });
+      }
+    };
+  </script>
+</head>
+<body>
+  <div class="card">
+    <div class="icon"><span>✓</span></div>
+    <h1>تم استلام طلبك بنجاح!</h1>
+    <p>سيتواصل معك فريقنا خلال ٢٤ ساعة لتأكيد الطلب وشحنه إليك مباشرة.<br><br><strong>استعد لتجربة طاقة تتنفسها مع قطرات ARK! 🌿</strong></p>
+    <a href="index.html" class="btn">العودة للرئيسية</a>
+  </div>
+</body>
+</html>
