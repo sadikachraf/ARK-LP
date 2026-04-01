@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/neckzen",
+      "destination": "https://neckzen.vercel.app"
+    }
+  ]
+}
