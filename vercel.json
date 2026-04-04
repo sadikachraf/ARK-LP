@@ -1,8 +1,7 @@
 {
   "rewrites": [
-    {
-      "source": "/neckzen",
-      "destination": "https://neckzen.vercel.app"
-    }
+    { "source": "/ark", "destination": "ark-lp.vercel.app" },
+    { "source": "/neckzen", "destination": "neckzen.vercel.app" },
+    { "source": "/reliefbelt", "destination": "reliefbelt.vercel.app" }
   ]
 }
